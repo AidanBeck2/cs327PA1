@@ -1,0 +1,28 @@
+import java.math.BigInteger;
+
+public class BeckAidanRSAFlawed {
+
+    public static void main (String[] args) {
+        System.out.println ("Flawed Example Output");
+
+        // 1)
+        BigInteger n = new BigInteger ("748567674651481801995116447644070267796617508884470018882963",
+                16);
+        int nBitLength = n.bitLength();
+
+        // 2)
+        // Using sage math
+        BigInteger p = new BigInteger ("1", 16);
+        BigInteger q = new BigInteger ("1", 16);
+
+        // Output
+        System.out.println ("N = 0x" + n.toString(16));
+        System.out.println ("P = 0x");
+        System.out.println ("Q = 0x");
+        System.out.println ("Bit-length of N = " + nBitLength);
+        System.out.println ("d = 0x");
+        System.out.println ("c = 0x");
+        System.out.println ("m2 = 0x");
+    }
+
+}
